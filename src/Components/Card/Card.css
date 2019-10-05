@@ -1,0 +1,13 @@
+.card-shadow {
+  background: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-extraPadding {
+  padding: 32px;
+}
+
+.card-extraMargin {
+  margin: 32px 0;
+}
