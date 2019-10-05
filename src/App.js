@@ -13,12 +13,13 @@ import BreadcrumbsGrandChild from "./Components/BreadcrumbsGrandChild";
 
 export default function App() {
   return (
-    <div>
+    <div classWrapper="app">
       <Header></Header>
-      <BreadcrumbsParent></BreadcrumbsParent>
-      <BreadcrumbsChild></BreadcrumbsChild>
-      <BreadcrumbsGrandChild></BreadcrumbsGrandChild>
-      <Card></Card>
+
+      <div className="wrapper">
+        <Card></Card>
+      </div>
+
       <Footer></Footer>
     </div>
   );
