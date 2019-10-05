@@ -7,37 +7,42 @@ import Teach from "../../pages/Teach";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
 
-// function Home() {
-//   return <h2>Home</h2>;
-// }
-
-// function RecycleMe() {
-//   return <h2>Recycle Me!</h2>;
-// }
-
-// function Share() {
-//   return <h2>Share</h2>;
-// }
-
-// function Teach() {
-//   return <h2>Teach Me</h2>;
-// }
-
 class Header extends Component {
   render() {
     return (
       <div>
         <Router>
-          <nav className="navbar navbar-expand-lg navbar-dark grad">
-            {/* <a className="navbar-brand" href="#">
-              GREDA
-            </a> */}
+          <nav className="navbar sticky-top d-flex justify-content-end navbar-dark grad">
             <Link to="/home" className="navbar-brand">
               GREDA
             </Link>
-            <Link to="/recycle">Recycle Me</Link>
-            <Link to="/share">Share Me</Link>
-            <Link to="/teach">Teach Me</Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item active">
+                  <Link to="/recycle">Recycle Me</Link>
+                </li>
+                <li className="nav-item active">
+                  <Link to="/share">Share Me</Link>
+                </li>
+                <li className="nav-item active">
+                  <Link to="/teach">Teach Me</Link>
+                </li>
+              </ul>
+            </div>
           </nav>
           <Switch>
             <Route path="/recycle">
