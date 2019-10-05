@@ -27,6 +27,7 @@ function Teach() {
 
 export default function App() {
   return (
+    <div>
     <Router>
       <div>
         <nav>
@@ -66,5 +67,6 @@ export default function App() {
     </Router>
     
     <Footer></Footer>
+    </div>
   );
 }
