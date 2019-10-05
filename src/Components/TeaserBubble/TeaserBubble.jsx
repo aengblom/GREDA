@@ -1,15 +1,24 @@
 import React from "react";
 import "./TeaserBubble.css";
 import classnames from 'classnames';
-import { Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
-const TeaserBubble = ({ src, link = "", title, description, className }) => (
-  <Link>
-    <div class="card" style="width: 18rem;">
-      <img src={src} class={classnames("rounded mx-auto d-block card-img-top", className)} />
-      <div class="card-body">
-        <h5 class="card-title">{title}</h5>
-        <p class="card-text">{description}</p>
+const TeaserBubble = ({ src, to = "", title, description, className }) => (
+  <Link to={to}>
+    <div className="media">
+      <div class="card pull-left" style={{ "width": "18rem", "height": "18rem" }}>
+        <div className="badge">
+        </div>
+        <div className="circle mx-auto">
+          <img src={src} class={classnames(className)} />
+          <span class="badge badge-success pull-right">
+            <i class="fas fa-check-circle"></i>
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{title}</h5>
+          <p class="card-text">{description}</p>
+        </div>
       </div>
     </div>
   </Link>

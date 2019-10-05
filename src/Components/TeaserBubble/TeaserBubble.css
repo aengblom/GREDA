@@ -1,0 +1,14 @@
+.circle img {
+    border-radius: 50%;
+}
+
+.green-badge {
+    border-radius: 50%;
+    background-color: green;
+}
+
+.media img+span.badge {
+    position: relative;
+    /* top: -8px;
+    left: 8px; */
+}
