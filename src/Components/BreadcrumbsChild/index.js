@@ -1,1 +1,1 @@
-export { default } from "./BreadcrumbsParent";
+export { default } from "./BreadcrumbsChild";
