@@ -7,6 +7,7 @@ import "./App.css";
 //import "./Components/TeachMe.js"
 import Header from "./Components/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 function Home() {
   return <h2>Home</h2>;
@@ -63,5 +64,7 @@ export default function App() {
         </Switch>
       </div>
     </Router>
+    
+    <Footer></Footer>
   );
 }
