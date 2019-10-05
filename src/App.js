@@ -16,6 +16,7 @@ export default function App() {
     <div>
       <Header></Header>
       <BreadcrumbsParent></BreadcrumbsParent>
+      <BreadcrumbsChild></BreadcrumbsChild>
       <Card></Card>
       <Footer></Footer>
     </div>

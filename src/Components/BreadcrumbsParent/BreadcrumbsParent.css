@@ -1,3 +1,22 @@
 .breadcrumbs-parent{
-    
+    font-family: 'Work Sans', sans-serif;
+    background: #fff;
+    font-size:12px;
+    color: #493745;
+}
+
+.breadcrumbs-parent .breadcrumb-item.active{
+    color: #493745;
+}
+
+.breadcrumbs-parent .breadcrumb-item+.breadcrumb-item::before{
+    color: #493745;
+}
+
+.breadcrumbs-parent a{
+    color: #4650CF;
+}
+
+.breadcrumbs-parent nav ol{
+    background: #fff;
 }
