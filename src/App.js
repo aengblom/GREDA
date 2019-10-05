@@ -12,10 +12,6 @@ export default function App() {
     <div classWrapper="app">
       <Header></Header>
 
-      <div className="wrapper">
-        <Card></Card>
-      </div>
-
       <Footer></Footer>
     </div>
   );
