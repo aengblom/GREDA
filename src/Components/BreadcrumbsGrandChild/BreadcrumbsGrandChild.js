@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./BreadcrumbsParent.css";
+import "./BreadcrumbsGrandChild.css";
 
-class BreadcrumbsParent extends Component {
+class BreadcrumbsGrandChild extends Component {
   render() {
-    return  <div className="breadcrumb breadcrumbs-parent">
+    return  <div className="breadcrumb breadcrumbs-grandchild">
 
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -15,4 +15,4 @@ class BreadcrumbsParent extends Component {
   }
 }
 
-export default BreadcrumbsParent;
+export default BreadcrumbsGrandChild;
