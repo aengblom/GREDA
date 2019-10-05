@@ -10,9 +10,11 @@ import Card from "./Components/Card";
 
 export default function App() {
   return (
-    <div>
+    <div classWrapper="app">
       <Header></Header>
-      <Card></Card>
+      <div className="wrapper">
+        <Card></Card>
+      </div>
       <Footer></Footer>
     </div>
   );
