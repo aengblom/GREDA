@@ -5,6 +5,7 @@ import "./App.css";
 //import "./Components/RecycleMe.js"
 //import "./Components/ShareMe.js"
 //import "./Components/TeachMe.js"
+import ZipCode from "./Components/ZipCode";
 import Header from "./Components/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from "./Components/Footer";
@@ -59,7 +60,15 @@ export default function App() {
           <Route path="/teach">
             <Teach />
           </Route>
-          <Route path="/">
+          <Route path="/zipcode">
+          {/* currently linking to component, need to change to PAGE */}
+            <ZipCode></ZipCode>
+          </Route>
+          <Route path="/dashboard">
+            {/* dashboard page */}
+            <Home />
+          </Route>
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
