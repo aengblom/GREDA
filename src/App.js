@@ -8,11 +8,13 @@ import "./App.css";
 import Header from "./Components/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from "./Components/Footer";
+import BreadcrumbsParent from "./Components/BreadcrumbsParent";
 
 export default function App() {
   return (
     <div>
       <Header></Header>
+      <BreadcrumbsParent></BreadcrumbsParent>
       <Footer></Footer>
     </div>
   );
