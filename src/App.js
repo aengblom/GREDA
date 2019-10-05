@@ -7,7 +7,6 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Card from "./Components/Card";
-import TeaserBubble from './Components/TeaserBubble' 
 
 export default function App() {
   return (
@@ -17,11 +16,6 @@ export default function App() {
         <Card></Card>
       </div>
       <Footer></Footer>
-      <TeaserBubble
-        src="http://via.placeholder.com/200x200"
-        title="title"
-        description="jdhfkjah akdjs ksdjfasfajfj f"
-      />
     </div>
   );
 }
