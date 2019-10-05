@@ -2,6 +2,10 @@
     border-radius: 50%;
 }
 
+.card {
+    border: none;
+}
+
 .green-badge {
     border-radius: 50%;
     background-color: green;
@@ -9,6 +13,20 @@
 
 .media img+span.badge {
     position: relative;
-    /* top: -8px;
-    left: 8px; */
+    top: 10px;
+    left: -50px;
+}
+
+#success {
+    background-color: none;
+    color: #28a745;
+    border-radius: 50%;
+    font-size: 3.5rem;
+}
+
+#danger {
+    background-color: none;
+    color: #dc3545;
+    border-radius: 50%;
+    font-size: 3.5rem;
 }
