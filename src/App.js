@@ -6,15 +6,20 @@ import "./App.css";
 //import "./Components/TeachMe.js"
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import BreadcrumbsParent from "./Components/BreadcrumbsParent";
 import Card from "./Components/Card";
+import BreadcrumbsChild from "./Components/BreadcrumbsChild";
+import BreadcrumbsGrandChild from "./Components/BreadcrumbsGrandChild";
 
 export default function App() {
   return (
     <div classWrapper="app">
       <Header></Header>
+
       <div className="wrapper">
         <Card></Card>
       </div>
+
       <Footer></Footer>
     </div>
   );
