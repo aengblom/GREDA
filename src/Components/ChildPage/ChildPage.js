@@ -12,21 +12,21 @@ const ChildPage = () => {
                 <h1 className="text-center h1-em mb-5">Plastics With No Numbers</h1>
                 <div class="card-group card-spaceBetween ">
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/yogurt@3x.png"
                         to="/"
                         icon={true}
                         success={true}
                         title="Yougurt, Butter, Margarine"
                     />
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/transparent-clamshell@3x.png"
                         to="/"
                         icon={true}
                         success={true}
                         title="Transparent Clamshell Containers"
                     />
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/icon-produce-containers.png"
                         to="/"
                         icon={true}
                         success={false}
@@ -36,21 +36,21 @@ const ChildPage = () => {
 
                 <div class="card-group card-spaceBetween ">
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/plastic-bags-film@3x.png"
                         to="/"
                         icon={true}
                         success={false}
                         title="Plasic Bags or Film"
                     />
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/bottles-home-needle-disposal@3x.png"
                         to="/recycle/container/plasticwithnonumbers/medicinebottle"
                         icon={true}
                         success={false}
                         title="Bottles Used for Home Needle Disposal"
                     />
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/larger-than-3-gallons@3x.png"
                         to="/"
                         icon={true}
                         success={false}
@@ -60,21 +60,21 @@ const ChildPage = () => {
 
                 <div class="card-group card-spaceBetween ">
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/hazardous-materials@3x.png"
                         to="/"
                         icon={true}
                         success={false}
                         title="Containers That Held Hazardous Materials"
                     />
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/medicine-bottles@3x.png"
                         to="/recycle/container/plasticwithnonumbers/medicinebottle"
                         icon={true}
                         success={false}
                         title="Medicine Bottles"
                     />
                     <TeaserBubble
-                        src="http://via.placeholder.com/100x100"
+                        src="/images/toy-electronic-packaging@3x.png"
                         to="/"
                         icon={true}
                         success={false}

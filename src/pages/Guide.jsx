@@ -9,17 +9,17 @@ class Guide extends Component {
         <h1 className="text-center h1-em mb-5">Recycling Guide</h1>
         <div class="card-group card-spaceBetween ">
           <TeaserBubble
-            src="http://via.placeholder.com/100x100"
+            src="/images/containers@3x.png"
             to="/recycle/container"
             title="Containers"
           />
           <TeaserBubble
-            src="http://via.placeholder.com/100x100"
+            src="/images/paper-and-boxes@3x.png"
             to='/'
             title="Paper & Boxes"
           />
           <TeaserBubble
-            src="http://via.placeholder.com/100x100"
+            src="/image/other-image-recycle-guide@3x.png"
             to='/'
             title="Other"
           />
