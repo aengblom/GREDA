@@ -4,7 +4,6 @@ import classnames from "classnames";
 import ZipCode from "../ZipCode"
 
 const Card = props => {
-  console.log(props)
   return (
     <div className="card card-extraPadding card-extraMargin card-shadow">
       <div className="card-body card-extraPadding text-center">

@@ -5,17 +5,20 @@ import Home from "../../pages/Home";
 import Guide from "../../pages/Guide";
 import Share from "../../pages/Share";
 import Teach from "../../pages/Teach";
+import MedicineBottle from "../../pages/MedicineBottle";
+import Dashboard from "../../pages/Dashboard";
 import Child2Grid from "../../pages/Child2Grid";
 import Location from "../../Components/Location";
+import PlasticWithNumbers from "../../pages/PlasticWithNumbers";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
 import ContainerParent from "../../pages/ContainerParent";
+import Image from "../Image";
 
 const Header = () => {
   const [showSP, setShowSPState] = useState(false);
 
   const setShowSP = bool => {
-    console.log(bool, "here");
     setShowSPState(bool);
   };
   return (
@@ -30,13 +33,9 @@ const Header = () => {
             ></Location>
           )}
           <Link to="/home" className="p-2 navbar-brand">
-            <span id="logo">
-              <img
-                src="https://via.placeholder.com/135x42"
-                alt="Greta"
-                border="0"
-              />
-            </span>
+            <div id="logo">
+              <Image src="/images/Greda-Logo-small.png" alt="Logo" border="0" />
+            </div>
           </Link>
           <button
             className="p-2 navbar-toggler"
@@ -85,6 +84,15 @@ const Header = () => {
           <Route exact path="/recycle/container/plasticwithnonumbers">
             <Child2Grid />
           </Route>
+          <Route exact path="/recycle/container/plasticwithnumbers">
+            <PlasticWithNumbers />
+          </Route>
+          <Route
+            exact
+            path="/recycle/container/plasticwithnonumbers/medicinebottle"
+          >
+            <MedicineBottle />
+          </Route>
           <Route exact path="/recycle/container">
             <ContainerParent />
           </Route>
@@ -93,6 +101,9 @@ const Header = () => {
           </Route>
           <Route exact path="/teach">
             <Teach />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
           </Route>
           <Route path="/home">
             <Home setShowSP={setShowSP} />
