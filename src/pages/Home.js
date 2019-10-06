@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "../Components/Card/Card";
+import List from "../Components/List";
 
 class Home extends Component {
   render() {
@@ -20,6 +21,7 @@ class Home extends Component {
               information for another location.
             </p>
           </div>
+          <List></List>
         </div>
       </div>
     );
