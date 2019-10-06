@@ -8,10 +8,10 @@ const Home = ({ setShowSP }) => {
         <div className="section">
           <h1 className="h3 text-center">
             Enter a zip code to show specific recycling information for your
-            area
+            area.
             </h1>
         </div>
-        <Card cardtext="What's your zip code" setShowSP={setShowSP}></Card>
+        <Card cardtext="What's your zip code?" setShowSP={setShowSP}></Card>
         <div className="section">
           <p className="text-center">
             <span className="font-weight-bold">Tip: </span>Visting another

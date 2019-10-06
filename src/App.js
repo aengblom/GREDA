@@ -7,13 +7,16 @@ import Card from "./Components/Card";
 import BreadcrumbsChild from "./Components/BreadcrumbsChild";
 import BreadcrumbsGrandChild from "./Components/BreadcrumbsGrandChild";
 
-export default function App() {
-
+import Splash from "./pages/Splash";
+ 
+function App() {
   return (
     <div className="app">
       <Header></Header>
-
       <Footer></Footer>
     </div>
   );
 }
+//export default function App() {
+
+export default Splash(App);
