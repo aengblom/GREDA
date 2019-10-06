@@ -27,3 +27,6 @@ li.nav-item > a {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.navbar-dark .navbar-toggler-icon {
+  background-image: none !important;
+}
