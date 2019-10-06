@@ -1,3 +1,23 @@
 .grad {
   background-image: linear-gradient(to bottom right, blue, purple);
 }
+
+.navbar-flex {
+  display: flex;
+}
+
+.nav-alignLeft {
+  margin-left: auto;
+}
+
+.nav-padding {
+  margin: 12px;
+}
+li.nav-item {
+  padding: 6px;
+}
+li.nav-item > a {
+  padding: 12px;
+  color: #fff !important;
+  font-weight: bold;
+}
