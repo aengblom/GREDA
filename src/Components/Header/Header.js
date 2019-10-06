@@ -28,10 +28,10 @@ class Header extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div
-              className="collapse navbar-collapse"
+              className="collapse navbar-collapse navbar-flex"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav mr-auto">
+              <ul className="navbar-nav nav-alignLeft">
                 <li className="nav-item active">
                   <Link to="/recycle">Recycle Me</Link>
                 </li>
