@@ -6,7 +6,7 @@ class Splash extends Component {
     render() {
         return (
             <div className="grad">
-                <Image src="https://i.ibb.co/vX35mzH/splash-png-logo-text.png" alt="GREDA Logo"></Image>
+                <Image src="https://i.ibb.co/ySbtKYV/Greda-Splash-logo-2x.png" alt="GREDA Logo"></Image>
             </div>
         );
     }
