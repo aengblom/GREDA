@@ -59,21 +59,21 @@ const Header = () => {
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
-                <Link to="/recycle">Recycle Me</Link>
+                <Link to="/recycle">Go Recycle</Link>
               </li>
               <li
                 className="nav-item active"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
-                <Link to="/share">Share Me</Link>
+                <Link to="/share">Go Share</Link>
               </li>
               <li
                 className="nav-item active"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
-                <Link to="/teach">Teach Me</Link>
+                <Link to="/teach">Go Learn</Link>
               </li>
             </ul>
           </div>
