@@ -1,0 +1,15 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 24px;
+}
+
+.form-marginLeft {
+  margin-left: 24px;
+}
+
+.form-marginRight {
+  margin-right: 24px;
+}

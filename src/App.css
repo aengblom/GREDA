@@ -30,8 +30,8 @@ p {
 .li-em {
   font-family: "WorkSans-Regular", sans-serif !important;
   color: #493745 !important;
-  font-size: .8rem;
-  text-align: center
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .section {
@@ -41,11 +41,6 @@ p {
 .page {
   display: flex;
   z-index: 0;
-}
-
-.page-home {
-  align-items: center;
-  height: 100%;
 }
 
 .page-home::after {
