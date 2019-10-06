@@ -5,7 +5,7 @@ import { BrowserRouter as Link } from "react-router-dom";
 
 const TeaserBubble = ({ src, to = "", title, description, className, icon = false, success = true }) => (
   <Link to={to}>
-    <div class="card" style={{ "width": "18rem" }}>
+    <div class="card media" style={{ "width": "18rem" }}>
       <div className="badge">
       </div>
       <div className="circle mx-auto">

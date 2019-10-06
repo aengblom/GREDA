@@ -4,6 +4,7 @@ import Home from "../../pages/Home";
 import Guide from "../../pages/Guide";
 import Share from "../../pages/Share";
 import Teach from "../../pages/Teach";
+import Child2Grid from '../../pages/Child2Grid';
 import Location from "../../Components/Location";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
@@ -51,13 +52,17 @@ class Header extends Component {
             </div>
           </nav>
           <Switch>
-            <Route path="/recycle">
+          
+            <Route exact path="/recycle">
               <Guide />
             </Route>
-            <Route path="/share">
+            <Route exact path="/recycle/nameOfParent/nameofchild">
+              <Child2Grid />
+            </Route>
+            <Route exact path="/share">
               <Share />
             </Route>
-            <Route path="/teach">
+            <Route exact path="/teach">
               <Teach />
             </Route>
             <Route path="/">
