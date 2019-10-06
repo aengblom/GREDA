@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import Home from "../../pages/Home";
-import Recycle from "../../pages/Recycle";
+import Guide from "../../pages/Guide";
 import Share from "../../pages/Share";
 import Teach from "../../pages/Teach";
+import Location from "../../Components/Location";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
 
@@ -12,12 +13,17 @@ class Header extends Component {
     return (
       <div>
         <Router>
-          <nav className="navbar sticky-top d-flex justify-content-end navbar-dark grad">
-            <Link to="/home" className="navbar-brand">
+          <nav className="navbar sticky-top d-flex navbar-dark grad">
+            <Location
+              className="p-2 flex-grow-1"
+              city="St. Paul"
+              state="Minnesota"
+            ></Location>
+            <Link to="/home" className="p-2 navbar-brand">
               GREDA
             </Link>
             <button
-              className="navbar-toggler"
+              className="p-2 navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -31,7 +37,7 @@ class Header extends Component {
               className="collapse navbar-collapse navbar-flex"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav nav-alignLeft">
+              <ul className="navbar-nav nav-alignRight">
                 <li className="nav-item active">
                   <Link to="/recycle">Recycle Me</Link>
                 </li>
@@ -46,7 +52,7 @@ class Header extends Component {
           </nav>
           <Switch>
             <Route path="/recycle">
-              <Recycle />
+              <Guide />
             </Route>
             <Route path="/share">
               <Share />
