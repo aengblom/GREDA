@@ -15,6 +15,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
 import ContainerParent from "../../pages/ContainerParent";
 import Image from "../Image";
+import Splash from "../../pages/Splash";
+
 
 const Header = () => {
   const [showSP, setShowSPState] = useState(false);
@@ -25,6 +27,7 @@ const Header = () => {
   return (
     <div>
       <Router>
+       
         <nav className="navbar sticky-top d-flex navbar-dark grad">
           {showSP && (
             <Location
@@ -96,6 +99,9 @@ const Header = () => {
           </Route>
           <Route exact path="/recycle/container/plasticwithnonumbers/yogurt">
             <Yogurt />
+          </Route>
+          <Route exact path="/splash">
+             <Splash/>
           </Route>
           <Route exact path="/recycle/container">
             <ContainerParent />
