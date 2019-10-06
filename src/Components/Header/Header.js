@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import Home from "../../pages/Home";
-import Recycle from "../../pages/Recycle";
+import Guide from "../../pages/Guide";
 import Share from "../../pages/Share";
 import Teach from "../../pages/Teach";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -46,7 +46,7 @@ class Header extends Component {
           </nav>
           <Switch>
             <Route path="/recycle">
-              <Recycle />
+              <Guide />
             </Route>
             <Route path="/share">
               <Share />
