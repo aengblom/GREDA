@@ -15,15 +15,15 @@ const ZipCode = () => {
   }
   return (
     <form className="form-inline" noValidate>
-      <label>Enter your Zip Code</label>
-      <div class="col-md-3 mb-3">
+      <div class="col-md-3 mb-3 d-flex">
         <input type="text" value={input} onChange={e => setInput(e.target.value)} class={classnames("form-control", { "is-valid": valid }, { "is-invalid": !valid })} id="validationDefault05" placeholder="Zip Code" required />
-      </div>
-      <Link to="/dashboard">
-        <button type="submit" disabled={!valid} className="btn btn-primary mb-2" onClick={async () => {
+        <Link to="/dashboard">
+        <button type="submit"  className="btn btn-primary mb-2" onClick={async () => {
           await setValidZip();
         }}>Submit</button>
       </Link>
+      </div>
+ 
     </form>
   )
 }
