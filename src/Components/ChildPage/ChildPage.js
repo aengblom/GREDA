@@ -13,7 +13,7 @@ const ChildPage = () => {
                 <div class="card-group card-spaceBetween ">
                     <TeaserBubble
                         src="http://via.placeholder.com/100x100"
-                        to="/recycle/container/plasticwithnonumbers/yogurt"
+                        to="/"
                         icon={true}
                         success={true}
                         title="Yougurt, Butter, Margarine"
@@ -44,7 +44,7 @@ const ChildPage = () => {
                     />
                     <TeaserBubble
                         src="http://via.placeholder.com/100x100"
-                        to="/"
+                        to="/recycle/container/plasticwithnonumbers/medicinebottle"
                         icon={true}
                         success={false}
                         title="Bottles Used for Home Needle Disposal"
@@ -80,9 +80,6 @@ const ChildPage = () => {
                         success={false}
                         title="Toy or Electronic Packaging"
                     />
-                </div>
-                <div>
-                    <List></List>
                 </div>
             </div>
         </div>

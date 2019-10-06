@@ -109,7 +109,7 @@ const Header = () => {
           <Route exact path="/dashboard">
             <Dashboard />
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <Home setShowSP={setShowSP} />
           </Route>
           <Route path="/">
