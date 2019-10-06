@@ -1,48 +1,51 @@
 import React, { useState } from "react";
 import "./ZipCode.css";
 import classnames from "classnames";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-const ZipCode = () => {
+const ZipCode = ({ history }) => {
   const [input, setInput] = useState("");
-  const [valid, setValid] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+  const [wasSubmitted, setWasSubmitted] = useState(false);
 
-  var setValidZip = () => {
-    const v = /^\d{5}(?:[-\s]\d{4})?$/.test(input);
-    console.log(input);
-    setValid(v);
-    console.log(v, valid, "here");
-  };
+  const submitButton = () => {
+    return (
+      <button
+        type="button"
+        className="btn btn-primary mb-2"
+        onClick={() => {
+          setWasSubmitted(true);
+          isValid && history.push("/recycle");
+        }}
+      >
+        Submit
+      </button>
+    )
+  }
   return (
     <form className="form-inline" noValidate>
       <div class="form-wrapper">
         <input
           type="text"
           value={input}
-          onChange={e => setInput(e.target.value)}
+          onChange={e => {
+            setInput(e.target.value)
+            setIsValid(/^\d{5}(?:[-\s]\d{4})?$/.test(e.target.value));
+          }}
           class={classnames(
             "form-control form-marginRight",
-            { "is-valid": valid },
-            { "is-invalid": !valid }
+            { "is-valid": wasSubmitted && isValid },
+            { "is-invalid": wasSubmitted && !isValid }
           )}
-          id="validationDefault05"
           placeholder="Zip Code"
           required
         />
-        <Link to="/recycle">
-          <button
-            type="submit"
-            className="btn btn-primary mb-2"
-            onClick={async () => {
-              await setValidZip();
-            }}
-          >
-            Submit
-          </button>
-        </Link>
+        {isValid ? <Link to="/recycle">
+          {submitButton()}
+        </Link> : submitButton()}
       </div>
     </form>
   );
 };
 
-export default ZipCode;
+export default withRouter(ZipCode);
