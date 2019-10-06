@@ -30,3 +30,15 @@ li.nav-item > a {
 .navbar-dark .navbar-toggler-icon {
   background-image: none !important;
 }
+
+#logo {
+  width: 135px;
+  height: 42px;
+}
+
+/* Large Mobile  */
+@media screen and (min-width: 576px) {
+  #logo {
+    max-width: 576px;
+  }
+}
