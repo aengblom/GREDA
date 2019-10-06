@@ -9,7 +9,7 @@ import BreadcrumbsGrandChild from "./Components/BreadcrumbsGrandChild";
 
 export default function App() {
   return (
-    <div classWrapper="app">
+    <div className="app">
       <Header></Header>
 
       <Footer></Footer>
