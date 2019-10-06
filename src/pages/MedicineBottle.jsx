@@ -1,13 +1,24 @@
 import React from "react";
 import Image from '../Components/Image';
-
+import { Link } from "react-router-dom";
 
 const MedicineBottle = () => {
   return (
     <div className="wrapper">
+      <div className="breadcrumb breadcrumbs-parent">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><Link to="/recycle">Recycling Guide</Link></li>
+            <li class="breadcrumb-item"><Link to="/recycle/container">Containers</Link></li>
+            <li class="breadcrumb-item"><Link to="/recycle/container/plasticwithnonumbers">Plastic with no Numbers</Link></li>
+            <li class="breadcrumb-item active" aria-current="page">Medicine Bottle</li>
+          </ol>
+        </nav>
+
+      </div>
       <h1 className="text-center h1-em mb-5">Medicine Bottle</h1>
       <div className="text-center">
-        <Image src="http://via.placeholder.com/100x100" className="text-center" />
+        <Image src="/images/medicine-bottle-for-page@3x.png" style={{height:170, width:100}} className="text-center"/>
       </div>
       <h3 className="h2-em" style={{ fontSize: "1em" }}> <i class="fa fa-times-circle" aria-hidden="true" style={{
         backgroundColor: "none",
@@ -66,7 +77,7 @@ homemade crayons.</p>
 </p>
           </div>
           <div className="col-4">
-            <Image src="http://via.placeholder.com/100x100" />
+            <Image src="/images/hide-a-key@3x.png" />
           </div>
         </div>
       </div>

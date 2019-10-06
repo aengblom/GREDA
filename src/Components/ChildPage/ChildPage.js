@@ -81,9 +81,6 @@ const ChildPage = () => {
                         title="Toy or Electronic Packaging"
                     />
                 </div>
-                <div>
-                    <List></List>
-                </div>
             </div>
         </div>
     );
