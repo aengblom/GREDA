@@ -6,7 +6,7 @@ class Guide extends Component {
   render() {
     return (
       <div className="wrapper">
-        <h2 className="text-center">Recycling Guide</h2>
+        <h1 className="text-center h1-em mb-5">Recycling Guide</h1>
             <div class="card-group">
               <TeaserBubble
                 src="http://via.placeholder.com/100x100"

@@ -1,3 +1,39 @@
+/* Basic styles */
+body {
+  font-family: "WorkSans-Regular", sans-serif !important;
+  color: #493745 !important;
+}
+
+p {
+  font-family: "WorkSans-Regular", sans-serif !important;
+  color: #493745 !important;
+}
+
+.h1-em {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #493745 !important;
+}
+
+.h2-em {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  color: #493745 !important;
+}
+
+.h3-em {
+  font-family: "WorkSans-Regular", sans-serif !important;
+  color: #493745 !important;
+}
+
+.li-em {
+  font-family: "WorkSans-Regular", sans-serif !important;
+  color: #493745 !important;
+  font-size: .8rem;
+  text-align: center
+}
+
 .section {
   margin: 16px 0;
 }
@@ -36,6 +72,7 @@
     max-width: 768px;
   } */
 }
+
 /* Desktop  */
 
 @media screen and (min-width: 1200px) {
