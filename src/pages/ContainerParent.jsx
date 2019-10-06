@@ -20,24 +20,24 @@ const ContainerParent = () => {
           title="Plastic with no Numbers"
         />
         <TeaserBubble
-          src="http://via.placeholder.com/100x100"
+          src="/images/metal@3x.png"
           to="/"
           title="Metal"
         />
       </div>
-      <div class="card-group card-spaceBetween ">
+      <div class="card-group card-spaceBetween">
         <TeaserBubble
-          src="http://via.placeholder.com/100x100"
+          src="/images/glass@3x.png"
           to="/"
           title="Glass"
         />
         <TeaserBubble
-          src="http://via.placeholder.com/100x100"
+          src="/images/large-size@3x.png"
           to="/"
           title="Large Size"
         />
         <TeaserBubble
-          src="http://via.placeholder.com/100x100"
+          src="/images/other@3x.png"
           to="/"
           title="Other"
         />

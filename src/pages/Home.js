@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Components/Card/Card";
+import List from "../Components/List";
 
 const Home = ({ setShowSP }) => {
   return (
