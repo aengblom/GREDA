@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import ComingSoon from "../../pages/ComingSoon";
 import Home from "../../pages/Home";
 import Guide from "../../pages/Guide";
 import Share from "../../pages/Share";
@@ -14,21 +15,29 @@ const Header = () => {
   const [showSP, setShowSPState] = useState(false);
 
   const setShowSP = bool => {
-    console.log(bool, 'here')
+    console.log(bool, "here");
     setShowSPState(bool);
-  }
+  };
   return (
     <div>
       <Router>
         <nav className="navbar sticky-top d-flex navbar-dark grad">
-          {showSP && <Location
-            className="p-2 flex-grow-1"
-            city="St. Paul"
-            state="Minnesota"
-          ></Location>}
+          {showSP && (
+            <Location
+              className="p-2 flex-grow-1"
+              city="St. Paul"
+              state="Minnesota"
+            ></Location>
+          )}
           <Link to="/home" className="p-2 navbar-brand">
-            GREDA
-            </Link>
+            <span id="logo">
+              <img
+                src="https://via.placeholder.com/135x42"
+                alt="Greta"
+                border="0"
+              />
+            </span>
+          </Link>
           <button
             className="p-2 navbar-toggler"
             type="button"
@@ -85,13 +94,16 @@ const Header = () => {
           <Route exact path="/teach">
             <Teach />
           </Route>
-          <Route path="/">
+          <Route path="/home">
             <Home setShowSP={setShowSP} />
+          </Route>
+          <Route path="/">
+            <ComingSoon />
           </Route>
         </Switch>
       </Router>
     </div>
   );
-}
+};
 
 export default Header;
