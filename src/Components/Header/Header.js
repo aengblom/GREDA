@@ -39,13 +39,31 @@ class Header extends Component {
             >
               <ul className="navbar-nav nav-alignRight">
                 <li className="nav-item active">
-                  <Link to="/recycle">Recycle Me</Link>
+                  <Link
+                    to="/recycle"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    Recycle Me
+                  </Link>
                 </li>
                 <li className="nav-item active">
-                  <Link to="/share">Share Me</Link>
+                  <Link
+                    to="/share"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    Share Me
+                  </Link>
                 </li>
                 <li className="nav-item active">
-                  <Link to="/teach">Teach Me</Link>
+                  <Link
+                    to="/teach"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    Teach Me
+                  </Link>
                 </li>
               </ul>
             </div>
