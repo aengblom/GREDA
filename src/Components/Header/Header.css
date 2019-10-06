@@ -8,18 +8,23 @@
 
 .nav-alignRight {
   margin-left: auto;
+  line-height: 34px;
 }
 
 .nav-padding {
   margin: 12px;
 }
+
 li.nav-item {
-  padding: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #493745;
+  text-align: right;
+  line-height: 34px;
 }
+
 li.nav-item > a {
-  padding: 12px;
   color: #000 !important;
-  font-weight: bold;
 }
 
 .navbar .navbar-toggler {

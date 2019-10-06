@@ -17,7 +17,6 @@ import ContainerParent from "../../pages/ContainerParent";
 import Image from "../Image";
 import Splash from "../../pages/Splash";
 
-
 const Header = () => {
   const [showSP, setShowSPState] = useState(false);
 
@@ -27,7 +26,6 @@ const Header = () => {
   return (
     <div>
       <Router>
-       
         <nav className="navbar sticky-top d-flex navbar-dark grad">
           {showSP && (
             <Location
@@ -36,6 +34,7 @@ const Header = () => {
               state="Minnesota"
             ></Location>
           )}
+          {!showSP && <div id="location" className="p-2 flex-grow-1"></div>}
           <Link to="/home" className="p-2 navbar-brand">
             <div id="logo">
               <Image src="/images/Greda-Logo-small.png" alt="Logo" border="0" />
@@ -62,21 +61,21 @@ const Header = () => {
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
-                <Link to="/recycle">Recycle Me</Link>
+                <Link to="/recycle">Go Recycle</Link>
               </li>
               <li
                 className="nav-item active"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
-                <Link to="/share">Share Me</Link>
+                <Link to="/share">Go Share</Link>
               </li>
               <li
                 className="nav-item active"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
               >
-                <Link to="/teach">Teach Me</Link>
+                <Link to="/teach">Go Learn</Link>
               </li>
             </ul>
           </div>
@@ -101,7 +100,7 @@ const Header = () => {
             <Yogurt />
           </Route>
           <Route exact path="/splash">
-             <Splash/>
+            <Splash />
           </Route>
           <Route exact path="/recycle/container">
             <ContainerParent />
