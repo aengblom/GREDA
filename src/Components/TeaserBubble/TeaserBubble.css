@@ -30,3 +30,7 @@
     border-radius: 50%;
     font-size: 3rem;
 }
+
+.circle .mx-auto .li-em{
+    text-align: left;
+}
