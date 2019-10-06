@@ -18,7 +18,7 @@ const MedicineBottle = () => {
       </div>
       <h1 className="text-center h1-em mb-5">Medicine Bottle</h1>
       <div className="text-center">
-        <Image src="http://via.placeholder.com/100x100" className="text-center" />
+        <Image src="/images/medicine-bottle-for-page@3x.png" style={{height:170, width:100}} className="text-center"/>
       </div>
       <h3 className="h2-em" style={{ fontSize: "1em" }}> <i class="fa fa-times-circle" aria-hidden="true" style={{
         backgroundColor: "none",
@@ -77,7 +77,7 @@ homemade crayons.</p>
 </p>
           </div>
           <div className="col-4">
-            <Image src="http://via.placeholder.com/100x100" />
+            <Image src="/images/hide-a-key@3x.png" />
           </div>
         </div>
       </div>
