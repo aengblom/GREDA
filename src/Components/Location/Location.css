@@ -1,0 +1,21 @@
+#location {
+  color: #fff !important;
+  font-weight: bold;
+}
+p {
+  margin-bottom: 0;
+}
+
+.city {
+  font-size: 24px;
+}
+
+.state {
+  font-size: 16px;
+}
+
+.change {
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
