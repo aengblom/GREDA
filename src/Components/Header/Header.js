@@ -6,6 +6,7 @@ import Share from "../../pages/Share";
 import Teach from "../../pages/Teach";
 import MedicineBottle from "../../pages/MedicineBottle";
 import Dashboard from "../../pages/Dashboard";
+import Yogurt from "../../pages/Yogurt";
 import Child2Grid from "../../pages/Child2Grid";
 import Location from "../../Components/Location";
 import PlasticWithNumbers from '../../pages/PlasticWithNumbers';
@@ -83,6 +84,9 @@ const Header = () => {
           </Route>
           <Route exact path="/recycle/container/plasticwithnonumbers/medicinebottle">
             <MedicineBottle />
+          </Route>
+          <Route exact path="/recycle/container/plasticwithnonumbers/yogurt">
+            <Yogurt />
           </Route>
           <Route exact path="/recycle/container">
             <ContainerParent />
