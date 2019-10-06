@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./ChildPage.css";
-import BreadcrumbsChild from "../BreadcrumbsChild";
+import BreadcrumbsGrandChild from "../BreadcrumbsGrandChild";
 import TeaserBubble from "../TeaserBubble";
 
 class ChildPage extends Component {
   render() {
     return  <div className="page child-page">
                 <div className="wrapper">
-                    <BreadcrumbsChild></BreadcrumbsChild>
+                    <BreadcrumbsGrandChild grandchildName="Plastic With No Numbers"/>
                     <h1 className="text-center h1-em mb-5">Plastics With No Numbers</h1>
                     <div class="card-group">
                         <TeaserBubble

@@ -8,6 +8,7 @@ import Child2Grid from '../../pages/Child2Grid';
 import Location from "../../Components/Location";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
+import ContainerParent from "../../pages/ContainerParent";
 
 class Header extends Component {
   render() {
@@ -52,12 +53,15 @@ class Header extends Component {
             </div>
           </nav>
           <Switch>
-          
+
             <Route exact path="/recycle">
               <Guide />
             </Route>
-            <Route exact path="/recycle/nameOfParent/nameofchild">
+            <Route exact path="/recycle/container/plasticwithnonumbers">
               <Child2Grid />
+            </Route>
+            <Route exact path="/recycle/container">
+              <ContainerParent />
             </Route>
             <Route exact path="/share">
               <Share />

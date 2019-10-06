@@ -29,7 +29,7 @@ const ZipCode = () => {
           placeholder="Zip Code"
           required
         />
-        <Link to="/dashboard">
+        <Link to="/recycle">
           <button
             type="submit"
             className="btn btn-primary mb-2"
