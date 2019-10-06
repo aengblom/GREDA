@@ -4,8 +4,8 @@ import classnames from 'classnames';
 import { Link } from "react-router-dom";
 
 const TeaserBubble = ({ src, to = "", title, description, className, icon = false, success = true }) => (
-  <Link to={to} id="link">
-    <div class="card" style={{ "width": "10rem" }}>
+<Link to={to} id="link">
+    <div class="card media" style={{ "width": "10rem" }}>
       <div className="badge">
       </div>
       <div className="circle mx-auto">

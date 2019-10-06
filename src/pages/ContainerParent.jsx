@@ -16,7 +16,7 @@ const ContainerParent = () => {
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/recycle/container/plasticwithnonumbers'
                     title="Plastic with no Numbers"
                 />
                 <TeaserBubble
