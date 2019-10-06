@@ -4,7 +4,7 @@ import Home from "../../pages/Home";
 import Guide from "../../pages/Guide";
 import Share from "../../pages/Share";
 import Teach from "../../pages/Teach";
-import Child2Grid from '../../pages/Child2Grid';
+import Child2Grid from "../../pages/Child2Grid";
 import Location from "../../Components/Location";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Header.css";
@@ -39,20 +39,31 @@ class Header extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav nav-alignRight">
-                <li className="nav-item active">
+                <li
+                  className="nav-item active"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                >
                   <Link to="/recycle">Recycle Me</Link>
                 </li>
-                <li className="nav-item active">
+                <li
+                  className="nav-item active"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                >
                   <Link to="/share">Share Me</Link>
                 </li>
-                <li className="nav-item active">
+                <li
+                  className="nav-item active"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                >
                   <Link to="/teach">Teach Me</Link>
                 </li>
               </ul>
             </div>
           </nav>
           <Switch>
-          
             <Route exact path="/recycle">
               <Guide />
             </Route>
