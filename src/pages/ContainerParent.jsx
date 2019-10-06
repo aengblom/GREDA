@@ -10,12 +10,12 @@ const ContainerParent = () => {
       <h1 className="text-center h1-em mb-5">Container</h1>
       <div class="card-group card-spaceBetween">
         <TeaserBubble
-          src="http://via.placeholder.com/100x100"
+          src="/images/icon-plastic-number@3x.png"
           to="/"
           title="Plastic with Numbers"
         />
         <TeaserBubble
-          src="http://via.placeholder.com/100x100"
+          src="/images/plastic-no-numbers@3x.png"
           to="/recycle/container/plasticwithnonumbers"
           title="Plastic with no Numbers"
         />
