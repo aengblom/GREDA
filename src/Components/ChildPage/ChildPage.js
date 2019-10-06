@@ -2,6 +2,7 @@ import React from "react";
 import "./ChildPage.css";
 import BreadcrumbsGrandChild from "../BreadcrumbsGrandChild";
 import TeaserBubble from "../TeaserBubble";
+import List from "../List";
 
 const ChildPage = () => {
     return <div className="page child-page">
@@ -79,6 +80,10 @@ const ChildPage = () => {
                     success={false}
                     title="Toy or Electronic Packaging"
                 />
+            </div>
+
+            <div>
+                <List></List>
             </div>
 
 
