@@ -1,13 +1,15 @@
 #location {
   color: #fff !important;
-  font-weight: bold;
 }
-p {
+#location > p {
   margin-bottom: 0;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .city {
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .state {
@@ -18,4 +20,5 @@ p {
   font-size: 12px;
   cursor: pointer;
   text-decoration: underline;
+  font-weight: bold;
 }
