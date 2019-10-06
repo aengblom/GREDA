@@ -1,34 +1,33 @@
 import React from "react";
-import "./ChildPage.css";
-import BreadcrumbsGrandChild from "../BreadcrumbsGrandChild";
-import TeaserBubble from "../TeaserBubble";
+import BreadcrumbsGrandChild from "../Components/BreadcrumbsGrandChild";
+import TeaserBubble from "../Components/TeaserBubble";
 
-const ChildPage = () => {
+const PlasticWithNumbers = () => {
     return <div className="page child-page">
         <div className="wrapper">
-            <BreadcrumbsGrandChild grandchildName="Plastic With No Numbers" />
-            <h1 className="text-center h1-em mb-5">Plastics With No Numbers</h1>
+            <BreadcrumbsGrandChild grandchildName="Plastic With Numbers" />
+            <h1 className="text-center h1-em mb-5">Plastic With Numbers</h1>
             <div class="card-group">
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
                     to=''
                     icon={true}
                     success={true}
-                    title="Yougurt, Butter, Margarine"
+                    title="1"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
                     to=''
                     icon={true}
                     success={true}
-                    title="Transparent Clamshell Containers"
+                    title="2"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
                     to=''
                     icon={true}
                     success={false}
-                    title="Produce Containers"
+                    title="3"
                 />
             </div>
 
@@ -37,22 +36,22 @@ const ChildPage = () => {
                     src="http://via.placeholder.com/100x100"
                     to=''
                     icon={true}
-                    success={false}
-                    title="Plasic Bags or Film"
+                    success={true}
+                    title="4"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to='/recycle/container/plasticwithnonumbers/medicinebottle'
+                    to=''
                     icon={true}
-                    success={false}
-                    title="Bottles Used for Home Needle Disposal"
+                    success={true}
+                    title="5"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
                     to=''
                     icon={true}
                     success={false}
-                    title="Containers Larger Than 3 Gallons"
+                    title="6"
                 />
             </div>
 
@@ -62,22 +61,8 @@ const ChildPage = () => {
                     src="http://via.placeholder.com/100x100"
                     to=''
                     icon={true}
-                    success={false}
-                    title="Containers That Held Hazardous Materials"
-                />
-                <TeaserBubble
-                    src="http://via.placeholder.com/100x100"
-                    to=''
-                    icon={true}
-                    success={false}
-                    title="Medicine Bottles"
-                />
-                <TeaserBubble
-                    src="http://via.placeholder.com/100x100"
-                    to=''
-                    icon={true}
-                    success={false}
-                    title="Toy or Electronic Packaging"
+                    success={true}
+                    title="7"
                 />
             </div>
 
@@ -86,4 +71,4 @@ const ChildPage = () => {
     </div>;
 }
 
-export default ChildPage;
+export default PlasticWithNumbers;
