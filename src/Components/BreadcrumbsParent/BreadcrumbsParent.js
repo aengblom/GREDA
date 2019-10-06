@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./BreadcrumbsParent.css";
+import { Link } from "react-router-dom";
 
 class BreadcrumbsParent extends Component {
   render() {
@@ -7,7 +8,7 @@ class BreadcrumbsParent extends Component {
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active"><Link to="/recycle">Recycling Guide</Link></li>
         </ol>
       </nav>
 

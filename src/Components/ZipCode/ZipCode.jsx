@@ -17,7 +17,7 @@ const ZipCode = () => {
     <form className="form-inline" noValidate>
       <div class="col-md-3 mb-3 d-flex">
         <input type="text" value={input} onChange={e => setInput(e.target.value)} class={classnames("form-control", { "is-valid": valid }, { "is-invalid": !valid })} id="validationDefault05" placeholder="Zip Code" required />
-        <Link to="/dashboard">
+        <Link to="/recycle">
         <button type="submit"  className="btn btn-primary mb-2" onClick={async () => {
           await setValidZip();
         }}>Submit</button>

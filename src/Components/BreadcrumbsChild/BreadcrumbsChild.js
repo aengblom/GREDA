@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import "../BreadcrumbsParent/BreadcrumbsParent.css";
+import { Link } from "react-router-dom";
 
-class BreadcrumbsChild extends Component {
-  render() {
-    return <div className="breadcrumb breadcrumbs-parent">
+const BreadcrumbsChild = ({ grandchildName="add name here" }) => {
+  return (
+    <div className="breadcrumb breadcrumbs-parent">
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
+          <li class="breadcrumb-item"><Link to="/recycle">Recycling Guide</Link></li>
+          <li class="breadcrumb-item active" aria-current="page">{grandchildName}</li>
         </ol>
       </nav>
-
-    </div>;
-  }
+    </div>
+  )
 }
 
 export default BreadcrumbsChild;
