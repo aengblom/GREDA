@@ -15,12 +15,12 @@ class Guide extends Component {
           />
           <TeaserBubble
             src="http://via.placeholder.com/100x100"
-            to='/recycle/paperandboxes'
+            to='/'
             title="Paper & Boxes"
           />
           <TeaserBubble
             src="http://via.placeholder.com/100x100"
-            to='/recycle/other'
+            to='/'
             title="Other"
           />
         </div>

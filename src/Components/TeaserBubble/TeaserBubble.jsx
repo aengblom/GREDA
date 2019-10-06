@@ -9,7 +9,7 @@ const TeaserBubble = ({ src, to = "", title, description, className, icon = fals
       <div className="badge">
       </div>
       <div className="circle mx-auto">
-        <img src={src} class={classnames(className)} />
+        <img src={src} class={classnames(className)} width={100} height={100}/>
         <span class="badge">
           {icon && (success ?
             <i class="fa fa-check-circle success" id="success" aria-hidden="true"></i>
@@ -20,8 +20,8 @@ const TeaserBubble = ({ src, to = "", title, description, className, icon = fals
         </span>
       </div>
       <div class="card-body">
-        <h3 class={classnames("card-title h2-em li-em", 'text-center˝')}>{title}</h3>
-        <p class={classnames("card-text", 'text-center')} > {description}</p>
+        <h3 class={classnames("card-title h2-em li-em")}>{title}</h3>
+        <p class={classnames("card-text")} > {description}</p>
       </div>
     </div>
   </Link >

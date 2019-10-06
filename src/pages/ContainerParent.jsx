@@ -21,24 +21,24 @@ const ContainerParent = () => {
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     title="Metal"
                 />
             </div>
             <div class="card-group">
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     title="Glass"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     title="Large Size"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     title="Other"
                 />
             </div>
