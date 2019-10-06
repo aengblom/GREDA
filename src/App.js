@@ -19,4 +19,4 @@ function App() {
 }
 //export default function App() {
 
-export default Splash(App);
+export default App;
