@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import TeaserBubble from '../Components/TeaserBubble';
-import Card from '../Components/Card';
+import TeaserBubble from "../Components/TeaserBubble";
+import Card from "../Components/Card";
 
 class Guide extends Component {
   render() {
     return (
       <div className="wrapper">
         <h1 className="text-center h1-em mb-5">Recycling Guide</h1>
-        <div class="card-group mx-auto">
+        <div class="card-group card-spaceBetween ">
           <TeaserBubble
             src="http://via.placeholder.com/100x100"
-            to='/recycle/container'
+            to="/recycle/container"
             title="Containers"
           />
           <TeaserBubble
@@ -27,7 +27,7 @@ class Guide extends Component {
 
         <Card cardtext="Top recycled items" noInput={true} />
       </div>
-    )
+    );
   }
 }
 
