@@ -4,7 +4,6 @@ import classnames from "classnames";
 import { Link, withRouter } from "react-router-dom";
 
 const ZipCode = ({ history, setShowSP }) => {
-  console.log(setShowSP)
   const [input, setInput] = useState("");
   const [isValid, setIsValid] = useState(false);
   const [wasSubmitted, setWasSubmitted] = useState(false);

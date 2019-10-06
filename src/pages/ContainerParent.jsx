@@ -11,7 +11,7 @@ const ContainerParent = () => {
             <div class="card-group">
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/recycle/container/plasticwithnumbers'
                     title="Plastic with Numbers"
                 />
                 <TeaserBubble
