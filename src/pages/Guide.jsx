@@ -24,6 +24,7 @@ class Guide extends Component {
                 title="Other"
               />
         </div>
+    
         <Card cardtext="Top recycled items" noInput={true}/>
       </div>
     )
