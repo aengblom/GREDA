@@ -5,8 +5,7 @@ import { BrowserRouter as Link } from "react-router-dom";
 
 const TeaserBubble = ({ src, to = "", title, description, className, icon = false, success = true }) => (
   <Link to={to}>
-    <div className="media">
-      <div class="card pull-left" style={{ "width": "18rem", "height": "18rem" }}>
+      <div class="card pull-left media" style={{ "width": "18rem", "height": "18rem" }}>
         <div className="badge">
         </div>
         <div className="circle mx-auto">
@@ -21,11 +20,10 @@ const TeaserBubble = ({ src, to = "", title, description, className, icon = fals
           </span>
         </div>
         <div class="card-body">
-          <h5 class="card-title">{title}</h5>
-          <p class="card-text">{description}</p>
+          <h3 class={classnames("card-title", { "text-center": !icon })}>{title}</h3>
+          <p class={classnames("card-text", { "text-center": !icon })} > {description}</p>
         </div>
       </div>
-    </div>
   </Link >
 )
 
