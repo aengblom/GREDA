@@ -19,7 +19,7 @@ class Guide extends Component {
             title="Paper & Boxes"
           />
           <TeaserBubble
-            src="/image/other-image-recycle-guide@3x.png"
+            src="/images/other-image-recycle-guide@3x.png"
             to='/'
             title="Other"
           />
