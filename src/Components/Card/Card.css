@@ -11,3 +11,21 @@
 .card-extraMargin {
   margin: 32px 0;
 }
+
+.card-group > a > .card {
+  background-color: transparent;
+}
+
+.card-group > a > .card > .card-body {
+  text-align: center;
+  width: 100%;
+}
+
+.card-spaceBetween {
+  justify-content: space-between;
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+}

@@ -10,21 +10,21 @@ const PlasticWithNumbers = () => {
             <div class="card-group">
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={true}
                     title="1"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={true}
                     title="2"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={false}
                     title="3"
@@ -34,21 +34,21 @@ const PlasticWithNumbers = () => {
             <div class="card-group">
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={true}
                     title="4"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={true}
                     title="5"
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={false}
                     title="6"
@@ -59,7 +59,7 @@ const PlasticWithNumbers = () => {
             <div class="card-group">
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/'
                     icon={true}
                     success={true}
                     title="7"
