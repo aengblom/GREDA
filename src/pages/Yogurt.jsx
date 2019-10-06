@@ -2,7 +2,7 @@ import React from "react";
 import Image from '../Components/Image';
 
 
-const MedicineBottle = () => {
+const Yogurt = () => {
   return (
     <div className="wrapper">
       <h1 className="text-center h1-em mb-5">Medicine Bottle</h1>
@@ -74,4 +74,4 @@ homemade crayons.</p>
   )
 }
 
-export default MedicineBottle;
+export default Yogurt;

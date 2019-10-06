@@ -11,7 +11,7 @@ const ContainerParent = () => {
       <div class="card-group card-spaceBetween">
         <TeaserBubble
           src="/images/icon-plastic-number@3x.png"
-          to=""
+          to="/"
           title="Plastic with Numbers"
         />
         <TeaserBubble
@@ -21,24 +21,24 @@ const ContainerParent = () => {
         />
         <TeaserBubble
           src="/images/metal@3x.png"
-          to=""
+          to="/"
           title="Metal"
         />
       </div>
       <div class="card-group card-spaceBetween">
         <TeaserBubble
           src="/images/glass@3x.png"
-          to=""
+          to="/"
           title="Glass"
         />
         <TeaserBubble
           src="/images/large-size@3x.png"
-          to=""
+          to="/"
           title="Large Size"
         />
         <TeaserBubble
           src="/images/other@3x.png"
-          to=""
+          to="/"
           title="Other"
         />
       </div>
