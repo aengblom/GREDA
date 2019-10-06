@@ -36,6 +36,11 @@ p {
   z-index: 0;
 }
 
+.page-home {
+  align-items: center;
+  height: 100%;
+}
+
 .page-home::after {
   content: "";
   position: absolute;
