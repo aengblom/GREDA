@@ -41,7 +41,7 @@ const ZipCode = ({ history, setShowSP }) => {
           placeholder="Zip Code"
           required
         />
-        {isValid ? <Link to="/recycle">
+        {isValid ? <Link to="/dashboard">
           {submitButton()}
         </Link> : submitButton()}
       </div>

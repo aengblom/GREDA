@@ -42,7 +42,7 @@ const ChildPage = () => {
                 />
                 <TeaserBubble
                     src="http://via.placeholder.com/100x100"
-                    to=''
+                    to='/recycle/container/plasticwithnonumbers/medicinebottle'
                     icon={true}
                     success={false}
                     title="Bottles Used for Home Needle Disposal"
