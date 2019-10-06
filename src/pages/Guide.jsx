@@ -6,7 +6,7 @@ class Guide extends Component {
   render() {
     return (
       <div className="wrapper">
-        <h1 className="text-center h1-em mb-5">Recycling Guide</h1>
+        <h1 className="text-center h1-em mb-5">Go Recycle</h1>
         <div class="card-group card-spaceBetween ">
           <TeaserBubble
             src="/images/containers@3x.png"
@@ -25,7 +25,7 @@ class Guide extends Component {
           />
         </div>
 
-        <Card cardtext="Top recycled items" noInput={true} />
+        <Card cardtext="Top recycled items ➔" noInput={true} />
       </div>
     );
   }
