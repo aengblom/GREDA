@@ -3,7 +3,8 @@ import "./ZipCode.css";
 import classnames from "classnames";
 import { Link, withRouter } from "react-router-dom";
 
-const ZipCode = ({ history }) => {
+const ZipCode = ({ history, setShowSP }) => {
+  console.log(setShowSP)
   const [input, setInput] = useState("");
   const [isValid, setIsValid] = useState(false);
   const [wasSubmitted, setWasSubmitted] = useState(false);
@@ -15,6 +16,7 @@ const ZipCode = ({ history }) => {
         className="btn btn-primary mb-2"
         onClick={() => {
           setWasSubmitted(true);
+          isValid && setShowSP(true);
           isValid && history.push("/recycle");
         }}
       >
